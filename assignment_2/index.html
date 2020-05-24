@@ -22,7 +22,7 @@
           <li ng-repeat="item in toBuy.items">
             Buy {{ item.quantity }} {{ item.name }}
             <button ng-click="toBuy.buy($index)" class="btn btn-default">
-              <span ng-if="item.name!==''" class="glyphicon glyphicon-ok"></span>Bought
+              <span ng-if="item.name!==''" class="glyphicon glyphicon-ok"></span> Buy!
 
             </button>
           </li>
