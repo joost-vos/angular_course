@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+<html lang="en" ng-app="NarrowItDownApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Narrow Down Your Menu Choice - Module 3 Assignment</title>
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="row">
+      <div class="col-md-12">
+        <h1>Narrow It Down</h1>
+        <p>Joost's solution to the module 3 assignment - Single Page Web Applications with AngularJS course on Coursera</p>
+      </div>
+    </header>
+
+  <!-- ROW WITH LISTS -->
+    <div class="row"  ng-controller="NarrowItDownController as search">
+      <div class="col-md-4">
+          <h2>Search menu</h2>
+          <input type="text" id="searchFor" ng-model="search.searchFor" class="form-control" placeholder="Search menu ingredient" />
+          <button ng-click="search.search()" class="btn btn-primary pull-left">Narrow It Down For Me!</button>
+      </div>
+
+      <div class="col-md-8">
+        <found-items 
+          title="Items found" 
+          list="search.found" 
+          result="{{ search.searchResult }}" 
+          dont-want="search.dontWant(index)"></found-items>
+      </div>
+    </div>
+  </div>
+
+    
+
+    <footer class="row">
+      <div class="col-md-12">
+        <p><b>Made in Holland where the tulips grow and the windmills spin</b></p>
+      </div>
+    </footer>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+  <script>
+    $(function() { $("input").focus(); })
+  </script>
+</body>
+</html>
