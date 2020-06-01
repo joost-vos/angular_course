@@ -79,7 +79,7 @@
   function FoundItemsDirective() {
     var ddo = {
     
-      templateUrl: "itemList.html",
+      templateUrl: "ItemList.html",
       scope: {
         list: "<",
         title: "@title",
