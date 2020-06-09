@@ -1,0 +1,7 @@
+  <ul>
+    <li ng-repeat="cat in $ctrl.items" style="list-style: none;">
+      <button ui-sref="categories.items({ categoryShortName: cat.short_name })" class="btn btn-primary btn-xs btn-block" style="text-align: left; width: 193px; display:inline-block;">
+      {{ cat.name }} [{{ cat.short_name }}]
+      </button>
+    </li>
+  </ul>

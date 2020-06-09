@@ -1,0 +1,43 @@
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: yellow;
+  background-color: #2965A8;
+}
+
+h2 {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+}
+button {
+  text-align: left;
+}
+
+input[type="text"] {
+  width: 200px;
+  float: left;
+}
+.narrow-button {
+  float: left;
+  margin-left: 10px;
+}
+
+
+footer {
+  margin-top: 25%;
+  border-top: solid 1px gray;
+  font-size: 0.8em;
+  text-align: center;
+  color: yellow;
+  background-color: #2965A8;
+}
+.btn.btn-primary.pull-left{
+  margin-top:10px;
+  color: yellow;
+
+}
+
+

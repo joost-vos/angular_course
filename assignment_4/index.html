@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MenuApp">
+<head>
+  <head>
+  <meta charset="UTF-8">
+  <title>Module 4 Assignment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+  <script src="lib/jquery-3.1.0.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="row">
+      <div class="col-md-12">
+        <h1>Menu App</h1>
+        <p>Joost's solution to the module 4 assignment<br/> 
+        - Single Page Web Applications with AngularJS course on Coursera - </p>
+      </div>
+    </header>
+
+  
+<!--========================== START: ROW WITH CONTENT ==========================-->
+    <div class="row">
+      <!-- View should contain the columns -->
+      <ui-view></ui-view>
+    </div>
+<!--========================== END: ROW WITH CONTENT ==========================-->
+  
+<!--========================== FOOTER ==========================-->
+    <footer class="row">
+      <div class="col-md-12">
+        <p><b>Made in Holland where the tulips grow and the windmills spin</b></p>
+      </div>
+    </footer>
+  </div>
+
+<!--========================== LOAD MODULES AND ROUTES ==========================-->
+  <script src="src/menu_app_module.js"></script>
+  <script src="src/routing.js"></script>
+
+<!--========================== LOAD DATA MODULE AND SERVICE ==========================-->
+  <script src="src/data_module.js"></script>
+  <script src="src/menu_dataservice.js"></script>
+
+<!--========================== LOAD CONTROLLERS ==========================-->
+  <script src="src/categories-list_controller.js"></script>
+  <script src="src/items-list_controller.js"></script>
+  
+<!--========================== LOAD COMPONENTS ==========================-->
+  <script src="src/categories_component.js"></script>
+  <script src="src/items_component.js"></script>
+</body>
+</html>
